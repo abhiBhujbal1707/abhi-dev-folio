@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -27,6 +30,13 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
+				},
+				portfolio: {
+					primary: 'hsl(var(--portfolio-primary))',
+					secondary: 'hsl(var(--portfolio-secondary))',
+					accent: 'hsl(var(--portfolio-accent))',
+					text: 'hsl(var(--portfolio-text))',
+					muted: 'hsl(var(--portfolio-muted))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -88,7 +98,12 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+				'slide-in-left': 'slideInLeft 0.6s ease-out forwards',
+				'zoom-in': 'zoomIn 0.6s ease-out forwards',
+				'fade-in-right': 'fadeInRight 0.6s ease-out forwards',
+				'bounce': 'bounce 1s ease-out',
 			}
 		}
 	},
