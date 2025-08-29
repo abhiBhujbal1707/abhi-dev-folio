@@ -1,11 +1,12 @@
 import { ExternalLink, Github, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import { Link } from 'react-router-dom';
 interface Project {
   name: string;
   stack: string[];
   description: string;
   link: string;
+  gitLink:string;
 }
 
 interface ProjectsSectionProps {
@@ -51,7 +52,7 @@ const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="flex-1 border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-portfolio-secondary"
+                    className="flex-1 border-portfolio-primary t  ext-portfolio-primary hover:bg-portfolio-primary hover:text-portfolio-secondary"
                   >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} className="mr-2" />
@@ -59,13 +60,17 @@ const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
                     </a>
                   </Button>
                 )}
+
+                
+
                 <Button
                   variant="outline"
                   size="sm"
                   className="border-portfolio-muted text-portfolio-muted hover:bg-portfolio-muted hover:text-portfolio-secondary"
+                  asChild
                 >
-                  <Github size={16} className="mr-2" />
-                  Code
+                  
+                 <a href ={project.gitLink}><Github size={16} className="mr-2" /> Code</a>
                 </Button>
               </div>
             </div>

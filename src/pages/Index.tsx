@@ -29,19 +29,22 @@ const portfolioData = {
       name: "ReelPro",
       stack: ["Next.js", "TypeScript", "MongoDB", "ImageKit", "NextAuth"],
       description: "A video-sharing platform with secure authentication, real-time video uploads, and reusable UI components.",
-      link: ""
+      link: "",
+      gitLink:""
     },
     {
       name: "PayNest",
       stack: ["Next.js", "Gemini API", "MongoDB", "Recharts", "Shadcn", "Clerk"],
       description: "AI-powered finance tracker with receipt scanning, recurring transactions, budget alerts, and analytics dashboards.",
-      link: "https://paynest-alpha.vercel.app"
+      link: "https://paynest-alpha.vercel.app",
+      gitLink:"https://github.com/abhiBhujbal1707/paynest"
     },
     {
       name: "Hospital Management System",
       stack: ["React.js", "C#.NET Minimal APIs", "MongoDB"],
       description: "Healthcare platform with modules for patients, doctors, admins, and billing, featuring secure APIs and real-time appointment management.",
-      link: ""
+      link: "",
+      gitLink:"https://github.com/abhiBhujbal1707"
     }
   ],
   education: [
